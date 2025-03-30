@@ -65,7 +65,7 @@ private:
         // Get a joint configuration.
         RCLCPP_INFO(this->get_logger(), "Config :  %d", model.nq);
         Eigen::VectorXd q(model.nq);
-        q << 0.0, 0.0, 0.0, 1.36, -0.0, -0.0, 2.22, 0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 0.0, 0.0;
+        q << 1.0, 0.0, 1.0, 0.0, 0.0, 1.52, -1.50, 0.1, 0.1, -0.0, -0.0, -0.0, 0.02, 0.02, 0.0, 0.0;
         std::cout << "Joint configuration: " << std::endl << q << std::endl << std::endl;
         
         // Get a frame.

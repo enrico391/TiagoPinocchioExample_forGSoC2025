@@ -2,11 +2,10 @@
 
 ## Usage
 
-Put this package inside workspace of tiago robot and start robot description topic:
+Put this package inside workspace of tiago robot then:
 
 ```sh
  source install/setup.bash
- ros2 launch tiago_description show.launch.py
 ```
 
 To built the package use:
@@ -21,11 +20,12 @@ and for use:
  ros2 run pinocchio_tiago pinocchio_tiago 
 ```
 
-and then republish robot_description with:
+and publish robot_description with:
 
 ```sh 
-ros2 launch tiago_description robot_state_publisher.launch.py
+ros2 launch tiago_description show.launch.py
 ```
 
-In the srdf folder there is the tiago.srdf file for collision
 
+
+In the srdf folder there is the tiago.srdf file for collision
